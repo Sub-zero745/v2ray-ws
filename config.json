@@ -15,7 +15,7 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/sub-zero"
+          "path": "/v2ray-vless"
         }
       }
     }
