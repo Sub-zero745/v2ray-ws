@@ -1,37 +1,7 @@
 {
-  "log": {
-    "loglevel": "warning"
-  },
   "inbounds": [
     {
       "port": 80,
-      "listen": "0.0.0.0",
-      "protocol": "vless",
-      "settings": {
-        "clients": [
-          {
-            "id": "e3b6de85-b36f-4dcf-b6ed-5bf5ebe93167",
-            "level": 0
-          }
-        ],
-        "decryption": "none"
-      },
-      "fallbacks": [
-        {
-          "path": "/v2ray-vless",
-          "dest": 10808
-        },
-        {
-          "dest": 8080
-        }
-      ],
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "port": 10808,
-      "listen": "127.0.0.1",
       "protocol": "vless",
       "settings": {
         "clients": [
@@ -45,7 +15,7 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/v2ray-vless"
+          "path": "/sub-zero"
         }
       }
     }
